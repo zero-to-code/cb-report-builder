@@ -1,7 +1,10 @@
 {
-
-  "municipal_body": "Marion County",
-  "title": "Communications Report",
-  "data": [],
-  "slug": "marion_county_communications_report"
+  "meta": {
+    "municipal_body": "Marion County",
+    "title": "Communications Report"
+  },
+  "data": [{
+      "label": "Broadband Penetration",
+      "value": "63% (low)"
+    }]
 }

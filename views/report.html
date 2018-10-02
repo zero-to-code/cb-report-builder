@@ -38,13 +38,21 @@
         $.getJSON("/data/communication.json", callback);
 
         function callback(data) {
-          createTitle(data);
-          createMain(data);
+          createTitle(data.meta);
+          createMain(data.data);
         }
 
         function createTitle(data) {
           $('.MunicipalBody').html(data.municipal_body);
           $('.DocumentTitle').html(data.title);
+        }
+
+        function createMain(data) {
+          for (let i = 0; i < data.length; i++) {
+
+
+            $('.Report').append(data[i].label)
+          }
         }
     </script>
   </body>
