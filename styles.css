@@ -1,31 +1,22 @@
-* {
+.Meta {
+  background: #0000ff;
+  color: white;
   text-align: center;
 }
 
-.Title {
-  background: blue;
-  color: white;
-  height: 20vh;
-}
-
-.Title {
-  padding-top: 5vh;
-}
-
-.ReportItem {
-  margin-top: 3vh;
-}
-
-.ReportItem__Label {
-  width: 50vw;
-  text-align: right;
-  display: inline;
+.Report__Label {
   font-weight: 700;
+  text-align: right;
+  margin-top: 2vh;
 }
 
-.ReportItem__Value {
-  width: 50vw;
+.Report__Value {
   text-align: left;
-  display: inline;
+  position: relative;
+}
 
+/* Mobile  styling.  */
+.Report__Value span {
+  position: absolute;
+  bottom: 0;
 }
