@@ -7,7 +7,7 @@
 // variable defaults to "communication.json".
 const parameters = document.location.search;
 const reportName = parameters.split("=")[1] || "communication";
-const reportPath = "/data/" + reportName + ".json";
+const reportPath = "data/" + reportName + ".json";
 
 // Fetch data, then feed data into callback function
 $.getJSON(reportPath, createReport);
