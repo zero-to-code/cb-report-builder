@@ -1,0 +1,31 @@
+* {
+  text-align: center;
+}
+
+.Title {
+  background: blue;
+  color: white;
+  height: 20vh;
+}
+
+.Title {
+  padding-top: 5vh;
+}
+
+.ReportItem {
+  margin-top: 3vh;
+}
+
+.ReportItem__Label {
+  width: 50vw;
+  text-align: right;
+  display: inline;
+  font-weight: 700;
+}
+
+.ReportItem__Value {
+  width: 50vw;
+  text-align: left;
+  display: inline;
+
+}
