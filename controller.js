@@ -1,14 +1,15 @@
-// Determine which report needs to be loaded from URL
-// query parameters.
-// i.e. localhost:8000/report.html?report=transportation means
-// to get the report data from transportation.json
-// Defaults to communication.json.
-
-const parameters = window.location.search;
+// Use the "report" URL query parameters to determine which
+// JSON file needs to be loaded.
+// For example: localhost:8000/report.html?report=transportation
+// means to get the report data from "transportation.json"
+//
+// If there is no query parameter present, the reportName
+// variable defaults to "communication.json".
+const parameters = document.location.search;
 const reportName = parameters.split("=")[1] || "communication";
+const reportPath = "/data/" + reportName + ".json";
 
 // Fetch data, then feed data into callback function
-const reportPath = "/data/" + reportName + ".json";
 $.getJSON(reportPath, createReport);
 
 //
